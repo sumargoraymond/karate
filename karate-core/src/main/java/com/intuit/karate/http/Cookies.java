@@ -68,7 +68,7 @@ public class Cookies {
         if (cookie instanceof DefaultCookie) {
             DefaultCookie dc = (DefaultCookie) cookie;
             if (dc.sameSite() != null) {
-                map.put(SAME_SITE, dc.sameSite().name());
+                map.put(SAME_SITE, dc.sameSite().toString());
             }
         }
         return map;
